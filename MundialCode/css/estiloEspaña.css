@@ -1,0 +1,226 @@
+/* Lista de estandares */
+/* 
+El margin bottom entre secciones es de 50px;
+*/
+
+
+/* Estilos generales*/
+/* Estilos generales*/
+/* Estilos generales*/
+html{
+    /* Esta fuente es para texto, no titulos */
+    font-family: 'Quicksand', sans-serif;
+    /* Este es el color de fondo de todo el documento */
+    background-color: #c0392b;
+}
+h1,h2,h3,h4,h5,h6,a,th,caption{
+    font-family: 'Anton', sans-serif; 
+}
+
+
+
+/* Estilos del header */
+/* Estilos del header */
+/* Estilos del header */
+header nav{
+    background-color: #f1c40f;
+    padding: 25px;
+    box-shadow: rgba(60, 20, 13,0.5) 0px 8px 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    height: 40px;
+    position: relative;
+}
+header nav a{
+    font-size: 20px;
+    text-decoration: none;
+
+    padding-bottom: 4px;
+    color: #fff;
+    border-bottom: #fff 2px solid;
+
+    display: inline-block;
+    position: absolute;
+    top: 35px;
+}
+header nav a:hover{
+    color: rgba(255, 255, 255, 0.6);
+    border-bottom: rgba(255, 255, 255, 0.6) 2px solid;
+}
+
+
+
+/* Estilos del main */
+/* Estilos del main */
+/* Estilos del main */
+table{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+table caption{
+    color: #f1c40f;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+table th,td,tr{
+    padding: 5px;
+    border-bottom: #f1c40f 1px solid;
+}
+table th{
+    background-color: #f1c40f;
+    width: 20%;
+    color: #fff;
+}
+table tr:nth-child(even){
+    background-color: #f1c40f;
+}
+table tr:nth-child(odd){
+    background-color: #f9ca24;
+}
+
+
+/* Estilos por id */
+/* Estilos por id */
+/* Estilos por id */
+
+/* header */
+/* header */
+
+/* Estilo del titulo del pais */
+#nav_title{
+    color: #fff;
+    font-size: 40px;
+
+    display: inline;
+    margin: 0 20%;
+
+}
+
+/* main */
+/* main */
+
+/* Div donde se muestran las copas del equipo (dentro de sct_side_info) */
+#copas{
+    width: 100px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 12px;
+    background-color:#3a160a;
+    border: #1c0802 8px solid;
+}
+/* El span que esta dentro del div (la X) */
+#copas .fa-times-circle {
+    color: #fff;
+    font-size: 50px;
+    margin: 75px 25px;
+}
+/* La section donde esta la informacion del equipo */
+#sct_miembros_info{
+    text-align: center;
+    margin: 0 100px;
+}
+#sct_miembros_info img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-size: cover;
+    margin: 25px auto;
+}
+#sct_miembros_info h1{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    color: #f1c40f;
+    font-size: 40px;
+    border-bottom: #f1c40f 3px solid;
+}
+
+
+
+
+/* Estilos por clase */
+/* Estilos por clase */
+/* Estilos por clase */
+
+/* Clases predeterminadas */
+/* Clases predeterminadas */
+
+.float{
+    display: flow-root;
+}
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+/* Clase para los items del lado izquierdo */
+.div-pItem{
+    margin-left: 50px;
+}
+
+/* Clases para cartas en blanco */
+/* Clases para cartas en blanco */
+
+.div-card{
+    background-color: #fff;
+    box-shadow: rgba(60, 20, 13,0.5) 5px 5px 5px;
+    padding: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+/* Clases para el width segun su lado */
+.div-side{
+    width: 350px;
+}
+.div-miembros{
+    width: 500px;
+    height: 800px;
+    position: relative;
+}
+
+/* Cartas en blanco del sct_side_info (columna izquierda de la pagina) */
+#sct_side_info .div-card img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+#sct_side_info .div-card h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+#sct_side_info .div-card p{
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+/* Cartas azules de los miembros del equipo (columna derecha de la pagina) */
+
+.div-carta-miembro{
+    width: 160px;
+    height: 195px;
+    display: inline-block;
+    color: #fff;
+    background-color: #f1c40f;
+    padding: 15px 5px 35px;
+    border-radius: 60px;
+    margin: 0 5%;
+    margin-bottom: 20px;
+}
+.div-1Carta{
+    position: absolute;
+    top: 170px;
+    left: 50px;
+}
+.div-2Carta{
+    position: absolute;
+    top: 170px;
+    right: 50px;
+}
+.div-3Carta{
+    position: absolute;
+    top: 500px;
+    left: 195px;
+}
