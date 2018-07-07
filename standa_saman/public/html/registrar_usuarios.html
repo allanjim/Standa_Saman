@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Registrar Usuarios</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estandares.css">
+
+    <link rel="stylesheet" href="../css/estilos_registrar_usuarios.css">
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="y-align">
+            <img src="../img/logo.png" alt="Logo blanco de Cenfotec">
+            <span id="btnMenu" class="fas fa-bars"></span>
+        </nav>
+        <div id="menu" class="hide">
+            <div>
+                <a href="#">Inicio</a>
+                <a href="#">Perfil</a>
+                <a href="#">Modificar perfil</a>
+                <a href="#">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="titulo" class="y-align">
+            <h1 class="x-align">Registrar</h1>
+        </section>
+        <section id="formulario" class="main-grid">
+            <div class="main-title y-align">
+                <h1 class="x-align">Usuario</h1>
+            </div>
+            <div class="main-content scroll-list">
+                <div class="input-grid">
+
+                    <label for="txtNombreuser">Nombre</label>
+                    <input type="text" id="txtNombreuser" required placeholder="Nombre*">
+
+                    <label for="txtPrimerapellidouser">Primer Apellido</label>
+                    <input type="text" id="txtPrimerapellidouser" required placeholder="primer apellido*">
+
+                    <label for="txtSegundoapellidouser">Segundo Apellido</label>
+                    <input type="txt" id="txtSegundoapellidouser" required placeholder="Segundo apellido*">
+
+                    <label for="txtCedulauser">Cedula</label>
+                    <input type="number" id="txtCedulauser" required placeholder="Cedula*">
+
+                    <label for="dateFechauser">Fecha de ingreso</label>
+                    <input type="date" id="dateFechauser" required>
+
+                    <label for="txtCorreouser">Correo</label>
+                    <input type="text" id="txtCorreouser" required placeholder="Correo*">
+
+                    <label for="txtTelefonouser">Telefono</label>
+                    <input type="number" id="txtTelefonouser" required placeholder="telefono*">
+
+                   
+                    <label for="dirExacta">Dirección exacta</label>
+                    <div>
+                        <input type="text" list="provincia" id="txtProvincia" required>
+                        <datalist id="provincia">
+                            <option value="Guanacaste"></option>
+                            <option value="Heredia"></option>
+                            <option value="Alajuela"></option>
+                            <option value="San José"></option>
+                            <option value="Cartago"></option>
+                            <option value="Puntarenas"></option>
+                            <option value="Limón"></option>
+                        </datalist>
+
+                        <input type="text" list="cantones" id="txtCantones">
+                        <datalist id="cantones">
+                            <option value="Abangares"></option>
+                            <option value="Acosta"></option>
+                            <option value="Aguirre"></option>
+                            <option value=" Alajuela"></option>
+                            <option value="Alajuelita "></option>
+                            <option value="Alvarado "></option>
+                            <option value="Aserrí "></option>
+                            <option value="Atenas "></option>
+
+                            <option value="Bagaces "></option>
+                            <option value="Barva"></option>
+                            <option value="Belén "></option>
+                            <option value="Buenos Aires "></option>
+
+                            <option value="Cañas "></option>
+                            <option value="Carrillo "></option>
+                            <option value="Cartago "></option>
+                            <option value="Corredores "></option>
+                            <option value="Coto Brus"></option>
+                            <option value="Curridabat "></option>
+
+
+                            <option value="Desamparados "></option>
+                            <option value="Dota "></option>
+
+
+                            <option value="El Guarco "></option>
+                            <option value="Escazú "></option>
+                            <option value="Esparza "></option>
+
+                            <option value="Flores "></option>
+
+                            <option value="Garabito "></option>
+                            <option value="Goicoechea "></option>
+                            <option value="Golfito "></option>
+                            <option value=" Grecia "></option>
+                            <option value=" Guácimo "></option>
+                            <option value=" Guatuso "></option>
+
+                            <option value="Heredia "></option>
+                            <option value="Hojancha "></option>
+
+                            <option value="Jiménez "></option>
+
+                            <option value="La Cruz "></option>
+                            <option value=" La Unión "></option>
+                            <option value="León Cortés "></option>
+                            <option value="Liberia "></option>
+                            <option value="Limón "></option>
+                            <option value="Los Chiles "></option>
+
+                            <option value="Matina "></option>
+                            <option value="Montes de Oca "></option>
+                            <option value="Montes de Oro "></option>
+                            <option value="Mora "></option>
+                            <option value="Moravia "></option>
+
+                            <option value="Nandayure "></option>
+                            <option value="Naranjo "></option>
+                            <option value="Nicoya "></option>
+
+                            <option value="Oreamuno "></option>
+                            <option value="Orotina "></option>
+                            <option value="Osa "></option>
+
+                            <option value="Palmares "></option>
+                            <option value="Paraíso "></option>
+                            <option value="Parrita "></option>
+                            <option value="Pérez Zeledón "></option>
+                            <option value="Poás "></option>
+                            <option value="Pococí "></option>
+                            <option value="Puntarenas "></option>
+                            <option value="puriscal "></option>
+
+                            <option value="Río Cuarto "></option>
+
+
+                            <option value="San Carlos "></option>
+                            <option value="San Isidro "></option>
+                            <option value="San José "></option>
+                            <option value="San Mateo "></option>
+                            <option value="San Pablo "></option>
+                            <option value="San Rafael "></option>
+                            <option value=" San Ramón "></option>
+                            <option value="Santa Ana "></option>
+                            <option value="Santa Bárbara "></option>
+                            <option value="Santa Cruz "></option>
+                            <option value="Santo Domingo "></option>
+                            <option value="Sarapiquí "></option>
+                            <option value="Siquirres "></option>
+
+
+                            <option value="Talamanca "></option>
+                            <option value="Tarrazú "></option>
+                            <option value="Tibás "></option>
+                            <option value="Tilarán "></option>
+                            <option value="Turrialba "></option>
+                            <option value="Turrubares "></option>
+
+
+                            <option value="Upala "></option>
+
+
+                            <option value="Valverde Vega "></option>
+                            <option value="Vázquez de Coronado"></option>
+
+
+                            <option value="Zarcero"></option>
+
+                        </datalist>
+
+                        <input type="text" list="Distrito" id="txtDistrito" required>
+                        <datalist id="Distrito">
+                            <option value="Carmen "></option>
+                            <option value=" Merced "></option>
+                            <option value="Hospital "></option>
+                            <option value="Catedral "></option>
+                            <option value="Zapote "></option>
+                            <option value=" San Fco. de Dos Ríos "></option>
+                            <option value="Uruca "></option>
+                            <option value=" Mata Redonda "></option>
+                            <option value="Pavas "></option>
+                            <option value="Hatillo "></option>
+                            <option value="San Sebastián "></option>
+
+                            <option value="Escazú "></option>
+                            <option value="San Antonio "></option>
+                            <option value="San Rafael"></option>
+
+                            <option value="Desamparados "></option>
+                            <option value="San Miguel "></option>
+                            <option value="San Juan de Dios "></option>
+                            <option value="San Rafael Arriba "></option>
+                            <option value="San Antonio "></option>
+                            <option value="Frailes "></option>
+                            <option value="Patarrá "></option>
+                            <option value="San Cristóbal "></option>
+                            <option value="Rosario "></option>
+                            <option value="Damas "></option>
+                            <option value="San Rafael Abajo "></option>
+                            <option value="Gravilias "></option>
+                            <option value="Los Guido"></option>
+
+                            <option value="Santiago "></option>
+                            <option value="Mercedes Sur "></option>
+                            <option value="Barbacoas "></option>
+                            <option value="Grifo Alto "></option>
+                            <option value="San Rafael "></option>
+                            <option value="Candelarita "></option>
+                            <option value="Desamparaditos "></option>
+                            <option value="San Antonio "></option>
+                            <option value="Chires "></option>
+
+                            <option value="San Marcos "></option>
+                            <option value="San Lorenzo "></option>
+                            <option value="San Carlos "></option>
+
+                            <option value="Aserrí"></option>
+                            <option value="Tarbaca"></option>
+                            <option value="Vuelta de Jorco "></option>
+                            <option value="San Gabriel "></option>
+                            <option value="Legua "></option>
+                            <option value="Monterrey "></option>
+                            <option value="Salitrillos "></option>
+
+                            <option value="Colón "></option>
+                            <option value="Guayabo"></option>
+                            <option value="Tabarcia "></option>
+                            <option value="Piedras Negras "></option>
+                            <option value="Picagres "></option>
+
+                            <option value="Guadalupe "></option>
+                            <option value="San Francisco "></option>
+                            <option value="Calle Blancos "></option>
+                            <option value="Mata de Plátano"></option>
+                            <option value="Ipís "></option>
+                            <option value=" Radondo"></option>
+                            <option value="Purral "></option>
+
+                            <option value="Santa Ana "></option>
+                            <option value="Salitral"></option>
+                            <option value="Pozos"></option>
+                            <option value="Uruca "></option>
+                            <option value="Piedades "></option>
+                            <option value="Brasil "></option>
+
+                            <option value="Alajuelita "></option>
+                            <option value="San ]osecito "></option>
+                            <option value="San Antonio "></option>
+                            <option value="Concepción "></option>
+                            <option value="San Felipe "></option>
+
+                            <option value="San Isidro "></option>
+                            <option value="San Rafael"></option>
+                            <option value="Dulce Nombre de Jesús "></option>
+                            <option value="Patalillo "></option>
+                            <option value="Cascajal "></option>
+
+                            <option value="San Ignacio "></option>
+                            <option value="Guaitil "></option>
+                            <option value="Palmichal"></option>
+                            <option value="Cangrejal"></option>
+                            <option value="Sabanillas "></option>
+
+                            <option value="San Juan "></option>
+                            <option value="Cinco Esquinas "></option>
+                            <option value="Anselmo Llorente "></option>
+                            <option value="León XIII "></option>
+                            <option value="Colima "></option>
+
+                            <option value="San Vicente "></option>
+                            <option value="San Jerónimo"></option>
+                            <option value="Trinidad "></option>
+
+                            <option value="San Pedro"></option>
+                            <option value="Sabanilla"></option>
+                            <option value="Mercedes "></option>
+                            <option value="San Rafael "></option>
+
+                            <option value="San Pablo"></option>
+                            <option value="San Pedro "></option>
+                            <option value="San Juan de Mata "></option>
+                            <option value="San Luis "></option>
+                            <option value="Carara"></option>
+
+                            <option value="Santa María"></option>
+                            <option value="Jardín "></option>
+                            <option value="Copey "></option>
+
+                            <option value="Curridabat"></option>
+                            <option value="Granadilla "></option>
+                            <option value="Sánchez "></option>
+                            <option value="Tirrases "></option>
+
+                            <option value="San Isidro de El General"></option>
+                            <option value="General "></option>
+                            <option value="Daniel Flores"></option>
+                            <option value="Rivas"></option>
+                            <option value="San Pedro "></option>
+                            <option value="Platanares "></option>
+                            <option value="Pejibaye "></option>
+                            <option value="Cajón "></option>
+                            <option value="Barú "></option>
+                            <option value="Río Nuevo "></option>
+                            <option value="Páramo "></option>
+
+                            <option value="San Pablo "></option>
+                            <option value="San Andrés "></option>
+                            <option value="Llano Bonito "></option>
+                            <option value="San Isidro "></option>
+                            <option value="Santa Cruz "></option>
+                            <option value="San Antonio "></option>
+
+                            <option value="Alajuela "></option>
+                            <option value="San José "></option>
+                            <option value="Carrizal "></option>
+                            <option value="San Antonio "></option>
+                            <option value="Guácima "></option>
+                            <option value="San Isidro "></option>
+                            <option value="Sabanilla "></option>
+                            <option value="San Rafael "></option>
+                            <option value="Río Segundo "></option>
+                            <option value="Desamparados "></option>
+                            <option value="Turrúcares "></option>
+                            <option value="Tambor "></option>
+                            <option value="Garita "></option>
+                            <option value="Sarapiquí "></option>
+
+                            <option value="San Ramón "></option>
+                            <option value="Santiago "></option>
+                            <option value="San Juan "></option>
+                            <option value="Piedades Norte "></option>
+                            <option value="Piedades Sur "></option>
+                            <option value="San Rafael "></option>
+                            <option value="San Isidro"></option>
+                            <option value="Ángeles "></option>
+                            <option value="Alfaro "></option>
+                            <option value="Volio "></option>
+                            <option value="Concepción "></option>
+                            <option value="Zapotal "></option>
+                            <option value="Peñas Blancas "></option>
+
+                            <option value="Grecia "></option>
+                            <option value="San Isidro "></option>
+                            <option value="San José "></option>
+                            <option value="San Roque "></option>
+                            <option value="Tacares "></option>
+                            <option value="Río Cuarto "></option>
+                            <option value="Puente de Piedra "></option>
+
+                            <option value="San Mateo"></option>
+                            <option value="Desmonte"></option>
+                            <option value="Jesús María"></option>
+
+                            <option value="Atenas"></option>
+                            <option value="Jesús "></option>
+                            <option value="Mercedes"></option>
+                            <option value="San Isidro "></option>
+                            <option value="Concepción "></option>
+                            <option value="San José "></option>
+                            <option value="Santa Eulalia "></option>
+                            <option value="Escobal "></option>
+
+                            <option value="Naranjo "></option>
+                            <option value="San Miguel "></option>
+                            <option value="San José"></option>
+                            <option value="Cirrí Sur "></option>
+                            <option value="San Jerónimo "></option>
+                            <option value="San Juan "></option>
+                            <option value="Rosario "></option>
+
+                            <option value="Palmares "></option>
+                            <option value="Zaragoza "></option>
+                            <option value="Buenos Aires "></option>
+                            <option value="Santiago "></option>
+                            <option value="Candelaria"></option>
+                            <option value="Esquipulas "></option>
+                            <option value="Granja "></option>
+
+                            <option value="San Pedro "></option>
+                            <option value="San Juan "></option>
+                            <option value="San Rafael "></option>
+                            <option value="Carrillos "></option>
+                            <option value="Sabana Redonda "></option>
+
+                            <option value="Orotina "></option>
+                            <option value="Mastate "></option>
+                            <option value="Hacienda Vieja "></option>
+                            <option value="Coyolar "></option>
+                            <option value="Ceiba"></option>
+
+                            <option value="Quesada "></option>
+                            <option value="Florencia "></option>
+                            <option value="Buenavista "></option>
+                            <option value="Aguas Zarcas "></option>
+                            <option value="Venecia "></option>
+                            <option value="Pital "></option>
+                            <option value="Fortuna "></option>
+                            <option value="Tigra "></option>
+                            <option value="Palmera "></option>
+                            <option value="Venado "></option>
+                            <option value="Cutris "></option>
+                            <option value="Monterrey "></option>
+                            <option value="Pocosol "></option>
+
+                            <option value="Zarcero "></option>
+                            <option value="Laguna "></option>
+                            <option value="Tapesco "></option>
+                            <option value="Guadalupe"></option>
+                            <option value="Palmira "></option>
+                            <option value="Zapote"></option>
+                            <option value="Brisas "></option>
+
+                            <option value="Sarchí Norte "></option>
+                            <option value="Sarchí Sur "></option>
+                            <option value="Toro Amarillo "></option>
+                            <option value="San Pedro "></option>
+                            <option value="Rodríguez "></option>
+
+                            <option value="Upala "></option>
+                            <option value="Aguas Claras "></option>
+                            <option value="San José (Pizote)"></option>
+                            <option value="Bijagua "></option>
+                            <option value="Delicias"></option>
+                            <option value="Dos Ríos "></option>
+                            <option value="Yolillal "></option>
+
+                            <option value="Los Chiles "></option>
+                            <option value="Caño Negro "></option>
+                            <option value="EL Amparo "></option>
+                            <option value="San Jorge "></option>
+
+                            <option value="San Rafael"></option>
+                            <option value="Buenavista "></option>
+                            <option value="Cote "></option>
+
+                            <option value="Oriental "></option>
+                            <option value="Occidental"></option>
+                            <option value="Carmen "></option>
+                            <option value="San Nicolás "></option>
+                            <option value="Agua Caliente (San francisco) "></option>
+                            <option value="Guadalupe (Arenilla) "></option>
+                            <option value="Corralillo "></option>
+                            <option value="Tierra Blanca "></option>
+                            <option value="Dulce Nombre "></option>
+                            <option value="Llano Grande "></option>
+                            <option value="Quebradilla "></option>
+
+                            <option value="Paraíso "></option>
+                            <option value="Santiago "></option>
+                            <option value="Orosi "></option>
+                            <option value="Cachí "></option>
+                            <option value="Llanos de Santa Lucía "></option>
+
+                            <option value="Tres Ríos"></option>
+                            <option value="San Diego "></option>
+                            <option value="San Juan "></option>
+                            <option value="San Rafael"></option>
+                            <option value="Concepción "></option>
+                            <option value="Dulce Nombre "></option>
+                            <option value="San Ramón"></option>
+                            <option value="Río Azul"></option>
+
+                            <option value="Juan Viñas "></option>
+                            <option value="Tucurrique "></option>
+                            <option value="Pejibaye "></option>
+
+                            <option value="Turrialba"></option>
+                            <option value="La Suiza "></option>
+                            <option value="Peralta "></option>
+                            <option value="Santa Cruz "></option>
+                            <option value="Santa Teresita"></option>
+                            <option value="Pavones "></option>
+                            <option value="Tuis "></option>
+                            <option value="Tayutic "></option>
+                            <option value="Santa Rosa "></option>
+                            <option value="Tres Equis "></option>
+                            <option value="La Isabel "></option>
+                            <option value="Chirripó "></option>
+
+                            <option value="Pacayas "></option>
+                            <option value="Cervantes "></option>
+                            <option value="Capellades "></option>
+
+                            <option value="San Rafael "></option>
+                            <option value="Cot"></option>
+                            <option value="Potrero Grande "></option>
+                            <option value="Cipreses "></option>
+                            <option value="Santa Rosa "></option>
+
+                            <option value="Tejar "></option>
+                            <option value="San Isidro "></option>
+                            <option value="Tobosi"></option>
+                            <option value="Patio de Agua "></option>
+
+                            <option value="Heredia "></option>
+                            <option value="Mercedes "></option>
+                            <option value="San Francisco "></option>
+                            <option value="Ulloa "></option>
+                            <option value="Varablanca "></option>
+
+                            <option value="Barva"></option>
+                            <option value="San Pedro"></option>
+                            <option value="San Pablo"></option>
+                            <option value="San Roque "></option>
+                            <option value="Santa Lucía"></option>
+                            <option value="San José de la Montaña "></option>
+
+                            <option value="Santo Domingo"></option>
+                            <option value="San Vicente"></option>
+                            <option value="San Miguel "></option>
+                            <option value="Paracito "></option>
+                            <option value="Santo Tomás "></option>
+                            <option value="Santa Rosa "></option>
+                            <option value="Tures "></option>
+                            <option value="Pará "></option>
+                            <option value="Santa Bárbara "></option>
+                            <option value="San Pedro "></option>
+                            <option value="San Juan"></option>
+                            <option value="Jesús "></option>
+                            <option value="Santo Domingo"></option>
+                            <option value="Purabá "></option>
+
+                            <option value="San Rafael "></option>
+                            <option value="San Josecito "></option>
+                            <option value="Santiago "></option>
+                            <option value="Ángeles "></option>
+                            <option value="Concepción "></option>
+
+                            <option value="San Isidro "></option>
+                            <option value="San José "></option>
+                            <option value="Concepción"></option>
+                            <option value="San Francisco "></option>
+
+                            <option value="San Antonio "></option>
+                            <option value="Ribera"></option>
+                            <option value="Asunción"></option>
+
+                            <option value="San Joaquín "></option>
+                            <option value="Barrantes"></option>
+                            <option value="Llorente "></option>
+
+                            <option value="San Pablo "></option>
+
+                            <option value="Puerto Viejo "></option>
+                            <option value="La Virgen "></option>
+                            <option value="Horquetas"></option>
+                            <option value="Llanuras del Gaspar"></option>
+                            <option value="Cureña "></option>
+
+                            <option value="Liberia "></option>
+                            <option value="Cañas Dulces"></option>
+                            <option value="Mayorga "></option>
+                            <option value="Nacascolo"></option>
+                            <option value="Curubandé "></option>
+
+                            <option value="Nicoya "></option>
+                            <option value="Mansión"></option>
+                            <option value="San Antonio "></option>
+                            <option value="Quebrada Honda "></option>
+                            <option value="Sámara"></option>
+                            <option value="Nosara"></option>
+                            <option value="Belén de Nosarita "></option>
+
+                            <option value="Santa Cruz "></option>
+                            <option value="Bolsón "></option>
+                            <option value="Veintisiete de Abril"></option>
+                            <option value="Tempate "></option>
+                            <option value="Cartagena"></option>
+                            <option value="Cuajiniquil "></option>
+                            <option value="Diriá "></option>
+                            <option value="Cabo Velas "></option>
+                            <option value="Tamarindo "></option>
+
+                            <option value="Bagaces "></option>
+                            <option value="Fortuna "></option>
+                            <option value="Mogote "></option>
+                            <option value="Río Naranjo "></option>
+
+                            <option value="Filadelfia "></option>
+                            <option value="Palmira "></option>
+                            <option value=" "></option>
+                            <option value="Belén "></option>
+                            <option value="Cañas "></option>
+                            <option value="Palmira "></option>
+                            <option value="San Miguel"></option>
+                            <option value="Bebedero "></option>
+                            <option value="Porozal"></option>
+
+                            <option value="Juntas "></option>
+                            <option value="Sierra"></option>
+                            <option value="San Juan "></option>
+                            <option value="Colorado "></option>
+
+                            <option value="Tilarán "></option>
+                            <option value="Quebrada Grande"></option>
+                            <option value="Tronadora"></option>
+                            <option value="Santa Rosa "></option>
+                            <option value="Líbano "></option>
+                            <option value="Tierras Morenas"></option>
+                            <option value="Arenal "></option>
+
+                            <option value="Carmona "></option>
+                            <option value="Santa Rita "></option>
+                            <option value="Zapotal "></option>
+                            <option value="San Pablo "></option>
+                            <option value="Porvenir "></option>
+                            <option value="Bejuco "></option>
+
+                            <option value="La Cruz "></option>
+                            <option value="Santa Cecilia "></option>
+                            <option value="Garita "></option>
+                            <option value="Santa Elena "></option>
+
+                            <option value="Hojancha "></option>
+                            <option value="Monte Romo "></option>
+                            <option value="Puerto Carrillo"></option>
+                            <option value="Huacas "></option>
+
+                            <option value="Puntarenas "></option>
+                            <option value="Pitahaya"></option>
+                            <option value="Chomes"></option>
+                            <option value="Lepanto "></option>
+                            <option value="Paquera "></option>
+                            <option value="Manzanillo "></option>
+                            <option value="Guacimal "></option>
+                            <option value="Barranca "></option>
+                            <option value="Monte Verde "></option>
+                            <option value="Isla del Coco "></option>
+                            <option value="Cóbano "></option>
+                            <option value="Chacarita "></option>
+                            <option value="Chira "></option>
+                            <option value="Acapulco "></option>
+                            <option value="El Roble "></option>
+                            <option value="Arancibia"></option>
+
+                            <option value="Espíritu Santo "></option>
+                            <option value="San Juan Grande "></option>
+                            <option value="Macacona "></option>
+                            <option value="San Rafael "></option>
+                            <option value="San Jerónimo "></option>
+
+                            <option value="Buenos Aires "></option>
+                            <option value="Volcán "></option>
+                            <option value="Potrero Grande "></option>
+                            <option value="Boruca "></option>
+                            <option value="Pilas "></option>
+                            <option value="Colinas "></option>
+                            <option value="Chánguena "></option>
+                            <option value="Biolley "></option>
+                            <option value="Brunka"></option>
+
+                            <option value="Miramar"></option>
+                            <option value="Unión "></option>
+                            <option value="San Isidro "></option>
+
+                            <option value="Puerto Cortés "></option>
+                            <option value="Palmar "></option>
+                            <option value="Sierpe "></option>
+                            <option value=" Ballena "></option>
+                            <option value="Piedras Blancas "></option>
+
+                            <option value="Quepos "></option>
+                            <option value="Savegre "></option>
+                            <option value="Naranjito "></option>
+
+                            <option value="Golfito "></option>
+                            <option value="Puerto Jiménez "></option>
+                            <option value="Guaycará "></option>
+                            <option value="Pavón "></option>
+
+                            <option value="San Vito "></option>
+                            <option value="Sabalito "></option>
+                            <option value="Aguabuena"></option>
+                            <option value="Limoncito "></option>
+                            <option value="Pittier "></option>
+
+                            <option value="Parrita "></option>
+
+                            <option value="Corredores "></option>
+                            <option value="Canoas "></option>
+                            <option value="Laurel "></option>
+
+                            <option value="Jacó "></option>
+                            <option value="Tárcoles "></option>
+                            <option value="Limón "></option>
+                            <option value="Valle la Estrella "></option>
+                            <option value="Río Blanco "></option>
+                            <option value="Matama "></option>
+
+                            <option value="Guápiles"></option>
+                            <option value="Jiménez "></option>
+                            <option value="Rita "></option>
+                            <option value="Roxana "></option>
+                            <option value="Cariari "></option>
+                            <option value="Colorado"></option>
+
+                            <option value="Siquirres "></option>
+                            <option value="Pacuarito "></option>
+                            <option value="Florida "></option>
+                            <option value="Germania "></option>
+                            <option value="Cairo "></option>
+                            <option value="Alegría "></option>
+
+                            <option value="Bratsi "></option>
+                            <option value="Sixaola "></option>
+                            <option value="Cahuita "></option>
+                            <option value="Telire "></option>
+
+                            <option value="Matina "></option>
+                            <option value="Batán "></option>
+                            <option value="Carrandi "></option>
+
+                            <option value="Guácimo "></option>
+                            <option value="Mercedes"></option>
+                            <option value="Pocora "></option>
+                            <option value="Río Jiménez "></option>
+                            <option value="Duacarí "></option>
+                        </datalist>
+
+                    </div>
+                    <label for="dirExacta">Rol</label>
+                    <div>
+                        <input type="text" list="rol" id="txtRoles" required>
+                        <datalist id="rol">
+                            <option value="asistente"></option>
+                            <option value="profesor"></option>
+                            <option value="Decanatura"></option>
+                            <option value="Asitente de decantura"></option>
+                            <option value="Rectoria"></option>
+                            
+                        </datalist>
+                    </div>
+
+                </div>
+            </div>
+                <div class=" map-content">
+                    <div class="map-title y-align">
+                        <h1 class="x-align">Ubicación</h1>
+                    </div>
+                    <div class="map-inputs">
+                        <label for="mapaUbicacion" class="y-align">Ubicación en mapa</label>
+                        <iframe id="mapaUbicacion" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15720.03747455195!2d-84.0730571802246!3d9.933177200000006!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scr!4v1530566777294" width="405" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        
+                        <label for="txtLatitud">Latitud</label>
+                        <input type="text" id="txtLatitud" required placeholder="Latitud *">
+    
+                        <label for="txtLongitud">Longitud</label>
+                        <input type="text" id="txtLongitud" required placeholder="Longitud *">
+                    </div>
+                </div>
+            
+            <div class="main-action y-align">
+                <div id="buttons" class="x-align float">
+                    <button type="button" class="float-left">Cancelar</button>
+                    <button type="button" class="float-right">Registrar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- SweetAlert 2 script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/servicio.js"></script>
+    <script src="../js/controlador_usuarios.js"></script>
+    <script src="../js/controlador_menu.js"></script>
+</body>
+
+</html>
