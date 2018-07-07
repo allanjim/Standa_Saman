@@ -1,0 +1,8 @@
+{
+    "editor.fontFamily": "Inconsolata, Lucida Sans Typewriter, 'Courier New'",
+    "editor.fontSize": 14,
+    "css.lint.duplicateProperties": "warning",
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "window.zoomLevel": -1
+}

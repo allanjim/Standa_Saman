@@ -1,0 +1,11 @@
+En el html de libros debe agarrar e incorporar en esos scripts el servicio de editoriales para cada asociacion se requiere el servicio de lo que se esta asociando, con eso ya tengo acceso a los servicios.Datalist funciona para busquedas dentro de listas en inputs, pero select solo me permite seleccionar.
+
+function mostrarEditoriales(){
+    let listaEditoriales = listar_editoriales(); // esto lo lee del servicio
+
+    for(let i = 0; i< listar_editoriales.length();i++){
+        let nuevaOpcion = new Option (listar_editoriales[i][0]);
+        nuevaOpcion.value = listar_editoriales[i][0];
+        selectEditorial.option.add(nuevaOpcion);
+    }
+};

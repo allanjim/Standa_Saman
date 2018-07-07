@@ -1,0 +1,149 @@
+@font-face{
+    font-family: leelawad;
+    src: url(../fonts/leelawad.ttf);
+}
+
+/* Estilos generales */
+/* Estilos generales */
+/* Estilos generales */
+
+html{
+    font-family: leelawad;
+    font-size: 1em;
+    background-color: #e6e3ea;
+}
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+p{
+    line-height: 1.5em;
+}
+
+/* Estilos del header */
+/* Estilos del header */
+/* Estilos del header */
+
+header{
+    background-image: url('../img/lp_img.jpeg');
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-attachment: fixed;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.35)
+}
+
+header a{
+    padding: 10px;
+    color: white;
+    background-color: rgba(30,33,66,0.8);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+    border: none;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+header a:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px;
+    background-color: rgba(30,33,66,0.7);
+}
+
+header nav{
+    height: 80px;
+}
+header nav img{
+    margin-left: 45px;
+    width: 125px;
+    height: 55px;
+}
+
+#div_titulo_lp{
+    height:  180px;
+}
+
+/* Estilos del body */
+/* Estilos del body */
+/* Estilos del body */
+
+main h1{
+    color: #252043;
+    text-shadow: none;
+    font-weight: normal;
+}
+
+/* Estilos de sct_vmv*/
+/* Estilos de sct_vmv*/
+#sct_vmv{
+    margin: 50px 100px;
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 350px;
+    grid-template-areas: 
+    "valores mision vision"
+}
+/* Estas clases son unicamente para el id sct_vmv */
+.valores{
+    grid-area: valores;
+}
+.mision{
+    grid-area: mision;
+}
+.vision{
+    grid-area: vision;
+}
+#sct_vmv p{
+    text-align: justify;
+}
+#sct_vmv h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#sct_vmv ul {
+    list-style: none;
+}
+#sct_vmv li{
+    margin-bottom: 15px;
+}
+#sct_vmv ul li::before{
+    content: "\2756"; color: rgba(30,33,66,0.8);
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1.2em;
+}
+
+/* Estilos de sct_hisotia*/
+#sct_historia{
+    height: 360px;
+    background: linear-gradient(45deg, #1E2142,#441B49);
+    color: #fff;
+    text-align: center;
+}
+#sct_historia p{
+    width: 65%;
+}
+#sct_historia h1{
+    color: #fff;
+    padding: 50px;
+}
+
+/* Class */
+/* Class */
+/* Class */
+
+/* Position */
+/* Position */
+
+.y-align{
+    display: flex;
+    align-items: center;
+}
+.x-align{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
