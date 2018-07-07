@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Laboratorio</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estandares.css">
+    <link rel="stylesheet" href="../css/estilo_registrar_laboratorio.css">
+    <!-- Font awesome icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="y-align">
+            <img src="../img/logo.png" alt="Logo blanco de Cenfotec">
+            <span id="btnMenu" class="fas fa-bars"></span>
+        </nav>
+        <div id="menu" class="hide">
+            <div>
+                <a href="#">Inicio</a>
+                <a href="#">Perfil</a>
+                <a href="#">Modificar perfil</a>
+                <a href="#">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="titulo" class="y-align">
+            <h1 class="x-align">Registrar</h1>
+        </section>
+        <section id="formulario" class="main-grid">
+            <div class="main-title y-align">
+                <h1 class="x-align">Laboratorio</h1>
+            </div>
+            <div class="main-content">
+                <div class="input-grid">
+
+                    <label for="txtNombreLab">Nombre</label>
+                    <input type="text" id="txtNombreLab" required placeholder="Nombre del laboratorio*">
+
+                    <label for="txtCodigoLab">Código</label>
+                    <input type="text" id="txtCodigoLab" required placeholder="Código del laboratorio*">
+
+                    <label for="numCupoLab">Cupo</label>
+                    <input type="number" id="numCupoLab" required placeholder="Cupo del laboratorio*" min="0">
+
+                    <label for="selSede">Sede</label>
+                    <select id="selSede">
+                        <option value="">--Seleccione una sede--</option>
+                        <option value="Central">Central</option>
+                        <option value="Virtual">Virtual</option>
+                        <option value="SanCarlos">San Carlos</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="main-action y-align">
+                <div id="buttons" class="x-align float">
+                    <button type="button" class="float-left" id="botonCancelar">Cancelar</button>
+                    <button type="button" class="float-right" id="botonRegistrar">Registrar</button>
+                </div>
+        </section>
+    </main>
+    <!-- SweetAlert 2 script -->
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="../js/servicio_registrar_laboratorio.js"></script>
+    <script src="../js/controlador_menu.js"></script>
+    <script src="../js/controlador_registrar_laboratorio.js"></script>
+
+
+</body>
+
+</html>
