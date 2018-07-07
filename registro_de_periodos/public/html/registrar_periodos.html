@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Registrar Período</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estandares.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="y-align">
+            <img src="../img/logo.png" alt="Logo blanco de Cenfotec">
+            <span class="fas fa-bars"></span>
+        </nav>
+    </header>
+    <main>
+        <section id="titulo" class="y-align">
+            <h1 class="x-align">Registrar</h1>
+        </section>
+        <section id="formulario" class="main-grid">
+            <div class="main-title y-align">
+                <h1 class="x-align">Período</h1>
+            </div>
+            <div class="main-content y-align">
+                <div class="input-grid">
+                    
+                    <label for="txtNombre">Nombre</label>
+                    <input type="text" id="txtNombre" required placeholder="Nombre del período*">
+                    
+                    <label for="sltEstado">Estado</label>
+                    <select id="sltEstado" required placeholder="Estado del Período">
+                        <option value="Activo">Activo</option>
+                        <option value="Inactivo">Inactivo</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="main-action y-align">
+                <div id="buttons" class="x-align float">
+                    <button type="button" class="float-left">Cancelar</button>
+                    <button type="button" class="float-right">Registrar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/public/jquery-3.3.1.js"></script>
+    <script src="/public/controlador_periodos.js"></script>
+    <script src="/public/servicio_periodos.js"></script>
+    <!-- SweetAlert 2 script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+</body>
+
+</html>

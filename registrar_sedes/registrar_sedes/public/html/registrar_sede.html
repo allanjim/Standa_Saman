@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Registrar Sede</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estandares.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="y-align">
+            <img src="../img/logo.png" alt="Logo blanco de Cenfotec">
+            <span id="btnMenu" class="fas fa-bars"></span>
+        </nav>
+        <div id="menu" class="hide">
+            <div>
+                <a href="#">Inicio</a>
+                <a href="#">Perfil</a>
+                <a href="#">Modificar perfil</a>
+                <a href="#">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="titulo" class="y-align">
+            <h1 class="x-align">Registrar</h1>
+        </section>
+        <section id="formulario" class="main-grid">
+            <div class="main-title y-align">
+                <h1 class="x-align">Sede</h1>
+            </div>
+            <div class="main-content y-align">
+                <div class="input-grid ">
+                    
+                    <label for="txtNombre">Nombre</label>
+                    <input type="text" id="txtNombre" required placeholder="Nombre de la sede*">
+
+                    <label for="txtDirExacta">Dirección exacta</label>
+                    <input type="text" id="txtDirExacta" required placeholder="Direccion exacta de sede*">
+                
+                </div>
+            </div>
+            <div class=" map-content">
+                <div class="map-title y-align">
+                    <h1 class="x-align">Ubicación</h1>
+                </div>
+                <div class="map-inputs">
+                    <label for="map" class="y-align">Ubicación en mapa</label>
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15720.03747455195!2d-84.0730571802246!3d9.933177200000006!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scr!4v1530566777294" width="405" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    
+                    <label for="txtLatitud">Latitud</label>
+                    <input type="text" id="txtLatitud" required placeholder="Latitud de la sede*">
+
+                    <label for="txtLongitud">Longitud</label>
+                    <input type="text" id="txtLongitud" required placeholder="Longitud de la sede*">
+                </div>
+            </div>
+            <div class="main-action y-align">
+                <div id="buttons" class="x-align float">
+                    <button type="button" class="float-left">Cancelar</button>
+                    <button type="button" class="float-right" id="btnRegistrar">Registrar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIJ2TrApBrLvBsy7Rx-8WNrYfZNO39waQ&callback=initMap">
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIJ2TrApBrLvBsy7Rx-8WNrYfZNO39waQ&libraries=places"></script>
+    <!-- Controlador -->
+    <script src="../js/controlador_sedes.js"></script>
+
+    <script src="../js/controlador_menu.js"></script>
+    <!-- SweetAlert 2 script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <!-- GoogleMaps script -->
+
+    <script src="../js/servicio_sedes.js"></script>
+    
+</body>
+
+</html>
